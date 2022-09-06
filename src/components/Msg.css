@@ -1,0 +1,73 @@
+form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+ }
+ 
+
+.item input{ 
+    height: 25px;
+    border: 1px solid rgb(221, 221, 221);
+    width: 300px;
+ }
+ 
+ .hour input{ 
+    height: 25px;
+    border: 1px solid rgb(221, 221, 221);
+ }
+
+ .hour{ 
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 520px;
+ }
+
+ .date{ 
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 520px;
+ }
+
+ .date input{ 
+    height: 25px;
+    border: 1px solid rgb(221, 221, 221);
+    width: 170px;
+ }
+
+ .item{ 
+    margin-top: 10px;
+    text-align: end;
+
+ }
+
+
+ button{ 
+    border: none;
+    background-color: rgba(4, 4, 250, 0.582);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 14px;
+    margin-top: 10px;
+ }
+
+ button:hover{ 
+    background-color: rgba(4, 4, 250, 0.699);
+ }
+
+ .label{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ textarea{ 
+    border: 1px solid rgb(221, 221, 221);
+ }
