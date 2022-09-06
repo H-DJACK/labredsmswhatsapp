@@ -66,15 +66,18 @@ const ListNumber =  ({ form }: Props)  => {
             method: 'post',
             url: 'https://graph.facebook.com/v14.0/106582738852547/messages',
             headers: { 
-              'Authorization': 'Bearer EAAPGSwaGSqIBAEqUmkl6L9xq7334Et45DXUrSVZAwqZAaoZCbx8NHRp9WZCMRSMeuIdrjB2sZCkbeM9z9etpFMt14HnwxN5RvqDnSNbiN4D7ZCgByoY5ybZADvZAMROJIOueKZBxJFxpEiAoAV7XOH2qrTK9eWdeVgRRVpBnJS2fspyx0GWAvFSaE', 
+              'Authorization': 'Bearer EAAPGSwaGSqIBAE76beySUSvdUFMF18dVEZBeKIKgGCubFZC0q8lthjhL2IrFMtnkHaKCOA6zg0qQlwMmIIWEYTneGFYeWcX6IbTojODPAjj3mtK4R9HPnELrrWuxyBhZBRQqBZBi3qwQ7xusyw32SnuAnponYNjiE84ZAOZBMYGushsYlWyjRnOmZCGMVKPwOVEcK5OcWQvf1twNC8Xwueq', 
               'Content-Type': 'application/json'
             },
             data : Template(value[0], form.img, form.title, form.description, form.training, form.link, form.begindate, form.enddate, form.beginhour, form.endhour) 
           }).then(function (response) {
+            alert("Votre message a ete envoyer avec success")
             console.log(JSON.stringify(response.data));
+           
           })
           .catch(function (error) {
             console.log(error);
+            alert(error.response.data.error.message)
           });
          
         })
